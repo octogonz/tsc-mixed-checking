@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+
+  "compilerOptions": {
+    "outDir": "lib/legacy",
+    "rootDir": "src/legacy",
+
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "declaration": true,
+    "sourceMap": true,
+    "declarationMap": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+    "useUnknownInCatchVariables": false,
+    "esModuleInterop": true,
+    "noEmitOnError": false,
+    "allowUnreachableCode": false,
+
+    "types": ["node"],
+
+    "module": "commonjs",
+    "target": "es2017",
+    "lib": ["es2017"],
+
+    "strict": false,
+    "allowJs": true
+  },
+  "references": [{ "path": "tsconfig.json" }],
+  "include": [
+    "src/legacy/b-weak-typescript.ts",
+    "src/legacy/c-never-checked-typescript.ts",
+    "src/legacy/d-plain-javascript.js"
+  ],
+  "exclude": ["node_modules", "lib"]
+}
