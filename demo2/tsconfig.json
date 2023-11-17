@@ -22,13 +22,13 @@
     "target": "es2017",
     "lib": ["es2017"],
 
-    "noEmit": false,
-    "noEmitOnError": false,
+    "noEmit": true,
+    "noEmitOnError": true,
     "strict": true,
-    "allowJs": false,
-
-    "composite": true
+    "allowJs": false
   },
-  "include": ["src/a-best-practices.ts"],
+  "include": [
+    "src/a-best-practices.ts"
+  ],
   "exclude": ["node_modules", "lib"]
 }

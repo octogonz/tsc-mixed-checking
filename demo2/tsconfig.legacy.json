@@ -24,11 +24,14 @@
 
     "noEmit": false,
     "noEmitOnError": false,
-    "strict": true,
-    "allowJs": false,
-
-    "composite": true
+    "strict": false,
+    "allowJs": true
   },
-  "include": ["src/a-best-practices.ts"],
+  "include": [
+    "src/a-best-practices.ts",
+    "src/b-weak-typescript.ts",
+    "src/c-never-checked-typescript.ts",
+    "src/d-plain-javascript.js"
+  ],
   "exclude": ["node_modules", "lib"]
 }
