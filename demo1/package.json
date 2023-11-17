@@ -2,10 +2,9 @@
   "name": "demo1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "node lib/d-plain-javascript.js",
-    "build": "tsc"
+    "build": "rimraf -g lib *.tsbuildinfo && tsc"
   },
   "author": "",
   "license": "MIT",
@@ -13,6 +12,7 @@
     "@types/node": "16"
   },
   "devDependencies": {
+    "rimraf": "^5.0.5",
     "typescript": "^5.2.2"
   }
 }

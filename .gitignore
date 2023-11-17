@@ -85,3 +85,6 @@ dist
 
 # Heft
 .heft
+
+# tsc incremental build files
+*.tsbuildinfo
