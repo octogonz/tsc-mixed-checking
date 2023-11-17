@@ -12,19 +12,19 @@
     "declarationMap": true,
     "inlineSources": true,
     "experimentalDecorators": true,
-    "strict": true,
     "useUnknownInCatchVariables": false,
     "esModuleInterop": true,
     "noEmitOnError": false,
     "allowUnreachableCode": false,
 
-    "allowJs": true,
-
     "types": ["node"],
 
     "module": "commonjs",
     "target": "es2017",
-    "lib": ["es2017"]
+    "lib": ["es2017"],
+
+    "strict": true,
+    "allowJs": true
   },
   "include": ["src/**/*.ts", "src/**/*.js"],
   "exclude": ["node_modules", "lib"]
