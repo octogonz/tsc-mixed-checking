@@ -58,7 +58,7 @@ The [demo2](./demo2/) project illustrates an approach of using two configuration
 - The `package.json` build command is `tsc && tsc --project tsconfig.legacy.json`, invoking the compiler twice.
 - For this approach, the errors in `c-never-checked-typescript.ts` are suppressed using `// @ts-nocheck` at the top of that file. This comment should eventually be removed as files are migrated to a better state.
 
-The engineering tradeoff for this approach is speed, since the files referenced by `tsconfig.json` must get type-checked twice.
+The engineering tradeoff for this approach is slowness, since the files referenced by `tsconfig.json` must get type-checked twice.
 
 ## demo3: Possible solution using tsconfig references
 
