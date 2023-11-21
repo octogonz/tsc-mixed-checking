@@ -29,6 +29,8 @@
 
     "composite": true
   },
-  "include": ["src/a-best-practices.ts"],
+  "include": [
+    "src/a-best-practices.ts"
+  ],
   "exclude": ["node_modules", "lib"]
 }

@@ -2,8 +2,8 @@
   "$schema": "http://json.schemastore.org/tsconfig",
 
   "compilerOptions": {
-    "outDir": "lib/legacy",
-    "rootDir": "src/legacy",
+    "outDir": "lib",
+    "rootDir": "src",
 
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
@@ -25,10 +25,11 @@
     "noEmit": false,
     "noEmitOnError": false,
     "strict": false,
-    "allowJs": true
+    "allowJs": true,
   },
   "references": [{ "path": "tsconfig.json" }],
   "include": [
+    "src/a-best-practices.ts",
     "src/legacy/b-weak-typescript.ts",
     "src/legacy/c-never-checked-typescript.ts",
     "src/legacy/d-plain-javascript.js"
