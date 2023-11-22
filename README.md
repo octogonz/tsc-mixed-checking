@@ -75,5 +75,3 @@ The engineering tradeoff for this approach is increased complexity. Also, many e
 ## Further thoughts
 
 In the above examples, the [include](https://www.typescriptlang.org/tsconfig#include) paths in `tsconfig.json` are explicitly listed for clarity. In a production solution, they should be based on globs, and some validation is required to avoid mistakes (and enforce the dependency criteria explained above).
-
-For `demo3`, the project references feature requires the `outDir` to be different for `tsconfig.json` and `tsconfig.legacy.json`, which requires some thought to ensure `import`/`require()` paths are correctly remapped from `src/thing.ts` (in .ts files) to the corresponding `lib/thing.js` (in the emitted .js files). I have solved it using a subdirectory (`"outDir": "lib"` and `"outDir": "lib/legacy"`), so that legacy files can import new files using `../` paths which will resolve correctly under both the `src` and `lib` folders. This avoids clumsy path mappings in `tsconfig.legacy.json`, but it would require some validation to ensure that `tsconfig.json`'s `"includes"` globs do not accidentally include files from `src/legacy`.
